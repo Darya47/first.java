@@ -28,6 +28,9 @@ public class Main {
                 marriott.getFreeRoomsWithToilet();
             } else if (command.equals("shower")){
                 marriott.getFreeRoomsWithShower();
+            }else if(command.indexOf("place") == 0){
+                int place = Integer.parseInt(String.valueOf(command.charAt(6)));
+                marriott.getRoomsWithPlace(place);
             }
         }
     }
