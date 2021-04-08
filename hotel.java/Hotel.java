@@ -40,6 +40,14 @@ public class Hotel {
             }
         }
     }
+    void getRoomsWithPlace(int place){
+        Room[]rooms = this.freeRooms;
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].place == place && rooms[i].roomNumber != 0) {
+                System.out.println("Комната номер "+rooms[i].roomNumber+" имеет "+place+" спальных мест");
+            }
+        }
+    }
     void getFreeRoomsWithEat(){
         Room[] rooms = this.freeRooms;
         for (int i = 0; i < rooms.length; i++) {
